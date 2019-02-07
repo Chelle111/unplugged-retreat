@@ -100,14 +100,20 @@ textarea {
 
 
   header, footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
 
   header .content-wrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +121,7 @@ textarea {
   }
 
   header nav {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -122,18 +129,35 @@ textarea {
   }
 
   header nav ul {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-
-
+    padding-inline-start: 0; /*padding left in user agent stylesheet */
   }
 
   header nav ul li {
+    list-style: none;
+  }
 
+  header nav ul li a {
+    text-decoration: none;
   }
 
   footer .content-wrapper {
+    width: 90%;
+    margin: 50px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
+  footer p {
+    margin: 0;
+  }
+
+  footer .contact {
+    margin: 50px auto;
   }
 
   footer .social-icons {
@@ -165,13 +189,14 @@ textarea {
 /* Hero Area */
 
   .hero-area {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
   }
 
   .hero-area .content-wrapper {
-
+    width: 90%;
   }
 
 /* Aside */
@@ -185,15 +210,24 @@ textarea {
   }
 
   aside .content-wrapper {
-
+    width: 90%;
   }
 
   aside .form-description {
+    padding-top: 30px;
+  }
 
+  aside .form-description p {
+    margin: 0;
   }
 
   aside .form {
+    margin-top: 40px;
+    padding-bottom: 55px;
+  }
 
+  aside .form input {
+    margin-top: 18px;
   }
 
   /* Features */
@@ -204,6 +238,16 @@ textarea {
     flex-flow: row wrap;
   }
 
+  .features .content-wrapper {
+    width: 90%;
+  }
+
+  .features article {
+    margin: 0;
+    width: 55%;
+    margin: 55px auto;
+  }
+
   .features .features-items {
     display: flex;
     justify-content: center;
@@ -211,6 +255,9 @@ textarea {
     flex-flow: row wrap;
   }
 
+  .features p {
+    margin: 0;
+  }
   /* Reviews */
 
   .reviews {
@@ -220,6 +267,22 @@ textarea {
     flex-flow: row wrap;
   }
 
+  .reviews .content-wrapper {
+    width: 90%;
+  }
+
+  .reviews h1 {
+    margin-top: 53px;
+  }
+
+  .reviews h2 {
+    margin-top: 22px;
+  }
+
+  .reviews p {
+    margin: 0;
+    padding-top: 25px;
+  }
 
 /* About Page --------------------- */
 
