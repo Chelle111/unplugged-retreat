@@ -131,7 +131,7 @@ textarea {
    h3,
    h4 {
      font-family: 'Poppins', sans-serif;
-     font-size: 1.875em;
+     font-size: 1.125em;
      font-weight: 400;
      margin: 20px 0;
    }
@@ -139,6 +139,14 @@ textarea {
    p {
      font-size: .875em;
      line-height: 1.285;
+   }
+
+   img {
+    width: 100%;
+   }
+
+   figure {
+    margin: 0;
    }
 
    address {
@@ -166,6 +174,14 @@ textarea {
 
   header .content-wrapper {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header figure {
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,6 +258,10 @@ textarea {
 /* Hero Area */
 
   .hero-area {
+    background: url('../img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -289,6 +309,9 @@ input[type=button] {
   /* Features */
 
   .features {
+    background: url('../img/img3.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
