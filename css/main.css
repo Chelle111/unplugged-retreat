@@ -227,7 +227,6 @@ textarea {
     margin: 50px 0;
   }
 
-
   footer .contact {
     margin-bottom: 50px;
   }
@@ -239,9 +238,17 @@ textarea {
   }
 
   footer .social-icons p {
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  footer .social-icons i {
+    font-size: 1.3125em;
   }
 
   .footer .social {
@@ -353,6 +360,7 @@ input[type=button] {
 
 
   .reviews h2 {
+    margin-top: 0;
     margin-bottom: 40px;
     line-height: 1;
   }
@@ -611,6 +619,10 @@ aside .content-wrapper .form  {
   width: 50%;
 }
 
+.features i {
+  margin-bottom: 30px;
+}
+
 .reviews article {
   display: flex;
   justify-content: space-between;
@@ -654,11 +666,16 @@ footer h4 {
 }
 
 footer p {
-  line-height: 1.714;
+  line-height: 1.285;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
 }
 
 footer .copyright {
-/*  width: 100%; */
+ width: 100%;
 }
 
 
@@ -740,6 +757,7 @@ footer .copyright {
     font-size: 1.125em;
     line-height: 1.333;
   }
+
 
   /* Hero Area*/
 
