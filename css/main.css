@@ -326,6 +326,7 @@ input[type=button] {
 
   .features h2 {
     margin-bottom: 60px;
+    text-align: center;
   }
 
   .features article {
@@ -440,6 +441,12 @@ input[type=button] {
   .faq-content h4 {
     line-height: 1.333;
     font-weight: 700;
+  }
+
+  .faq-content p {
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.2;
   }
 
 /* ==========================================================================
@@ -589,10 +596,12 @@ header nav ul {
 /* Aside */
 
 aside .content-wrapper {
-  margin: 50px 0;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  background-color: rgb(142, 142, 142, 0.2);
+  margin: 0;
+  padding: 20px;
 }
 
 aside .content-wrapper .form-description,
@@ -604,7 +613,9 @@ aside .content-wrapper .form  {
 /* Features */
 
 .features h2 {
-  margin: 0 40px 20px 0;
+/*  margin: 0 40px 20px 0;*/
+
+text-align: center;
 }
 
 .features article {
@@ -621,6 +632,14 @@ aside .content-wrapper .form  {
 
 .features i {
   margin-bottom: 30px;
+}
+
+/*------Review -------*/
+
+.reviews .content-wrapper {
+  background-color: rgb(142, 142, 142, 0.2);
+  margin: 0;
+  padding: 50px 25px;
 }
 
 .reviews article {
@@ -647,7 +666,7 @@ aside .content-wrapper .form  {
 
 footer .content-wrapper {
   width: 65%;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .footer-content {
@@ -683,6 +702,11 @@ footer .copyright {
   About
 -----------------------------------------*/
 
+.mission .content-wrapper {
+  background-color: rgb(142, 142, 142, 0.4);
+  padding: 50px 20px;
+  margin: 0;
+}
 .mission-content {
   display: flex;
   justify-content: space-between;
@@ -717,10 +741,13 @@ footer .copyright {
 -----------------------------------------*/
 .faq .content-wrapper {
   justify-content: space-between;
+  background-color: rgb(142, 142, 142, 0.4);
+  margin: 0;
+  padding: 10px 20px 0 20px;
 }
 
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .faq h2 {
@@ -758,6 +785,14 @@ footer .copyright {
     line-height: 1.333;
   }
 
+  header .content-wrapper {
+    padding: 30px;
+  }
+
+  header nav ul {
+    padding-right: 25px;
+  }
+
 
   /* Hero Area*/
 
@@ -784,7 +819,8 @@ footer .copyright {
  /* Features */
 
  .features h2 {
-   width: 70%;
+   width: 100%;
+   text-align: center;
  }
 
  .features article {
@@ -827,15 +863,28 @@ footer .copyright {
     }
 
     .faq-content {
-      flex-basis: 35%;
+      flex-basis: 42%;
     }
 
-    .faq h4,
+    .faq-content,
+    .left {
+      padding-left: 20px;
+    }
+
+    .faq-content,
+    .right {
+      padding-right: 20px;
+    }
+
+
+    .faq h4 {
+      font-size: 1.25em;
+    }
+
     .faq p {
       font-size: 1.125em;
-      line-height: 1;
+      line-height: 1.3;
     }
-
 }
 
 /* ==========================================================================
@@ -912,4 +961,6 @@ footer .copyright {
     h3 {
         page-break-after: avoid;
     }
+
+
 }
